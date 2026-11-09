@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+demo/
+results/
+Результаты/
+Результаты повторной проверки/
+protocol.json
+boundary_protocol.json
+*.db
+*.db-*
+.DS_Store

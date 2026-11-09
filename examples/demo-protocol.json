@@ -1,0 +1,188 @@
+{
+  "tested_on": "2026-11-09",
+  "evaluation_time": "2026-10-14T12:00:00+00:00",
+  "engine_version": "1.0.1",
+  "core_passed": 40,
+  "integration_passed": 8,
+  "boundary_passed": 20,
+  "summary_before": {
+    "total_pairs": 480,
+    "applicable_pairs": 98,
+    "counts": {
+      "PASS": 69,
+      "FAIL": 13,
+      "UNKNOWN": 15,
+      "ERROR": 1,
+      "NOT_APPLICABLE": 382
+    },
+    "determinate_coverage": 0.8367346938775511,
+    "pass_share_determinate": 0.8414634146341463,
+    "failures_with_exception": 1
+  },
+  "summary_after": {
+    "total_pairs": 480,
+    "applicable_pairs": 98,
+    "counts": {
+      "PASS": 70,
+      "FAIL": 12,
+      "UNKNOWN": 15,
+      "ERROR": 1,
+      "NOT_APPLICABLE": 382
+    },
+    "determinate_coverage": 0.8367346938775511,
+    "pass_share_determinate": 0.8536585365853658,
+    "failures_with_exception": 1
+  },
+  "delta": [
+    {
+      "resource_id": "public:CASE-02",
+      "rule_id": "NET-01",
+      "before": "FAIL",
+      "after": "PASS",
+      "evidence_changed": true
+    }
+  ],
+  "database_rows": {
+    "runs": 2,
+    "resources": 80,
+    "assessments": 960
+  },
+  "selected": [
+    {
+      "resource_id": "public:CASE-02",
+      "segment": "public",
+      "kind": "network",
+      "rule_id": "NET-01",
+      "requirement": "F-03",
+      "status": "FAIL",
+      "severity": 3,
+      "priority": 6,
+      "reason": "Административный порт доступен из любой сети",
+      "evidence": {
+        "ingress": [
+          {
+            "cidr": "0.0.0.0/0",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      },
+      "evidence_sha256": "b77f2828591f1393f4a2c0e72c5f11b6a7a4710f8644d1a5e8bfbe449305f7c3",
+      "exception_id": null,
+      "policy_version": "POL-2026-01"
+    },
+    {
+      "resource_id": "private:CASE-03",
+      "segment": "private",
+      "kind": "network",
+      "rule_id": "NET-01",
+      "requirement": "F-03",
+      "status": "UNKNOWN",
+      "severity": 3,
+      "priority": 0,
+      "reason": "Нет поля ingress",
+      "evidence": {
+        "ingress": null,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      },
+      "evidence_sha256": "2df923d3170930e771e8783046c9e9473b42cd1e4d6683a1f72bd84fd3c37d0c",
+      "exception_id": null,
+      "policy_version": "POL-2026-01"
+    },
+    {
+      "resource_id": "private:CASE-37",
+      "segment": "private",
+      "kind": "network",
+      "rule_id": "NET-01",
+      "requirement": "F-03",
+      "status": "ERROR",
+      "severity": 3,
+      "priority": 0,
+      "reason": "Поле ingress: нужен тип list",
+      "evidence": {
+        "ingress": "not-an-array",
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      },
+      "evidence_sha256": "0d6c4d8bd151de4c3610fd43f5594181b9837535db0b4a2c60c5faa57da57827",
+      "exception_id": null,
+      "policy_version": "POL-2026-01"
+    },
+    {
+      "resource_id": "private:CASE-39",
+      "segment": "private",
+      "kind": "network",
+      "rule_id": "NET-01",
+      "requirement": "F-03",
+      "status": "FAIL",
+      "severity": 3,
+      "priority": 6,
+      "reason": "Административный порт доступен из любой сети",
+      "evidence": {
+        "ingress": [
+          {
+            "cidr": "0.0.0.0/0",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      },
+      "evidence_sha256": "b77f2828591f1393f4a2c0e72c5f11b6a7a4710f8644d1a5e8bfbe449305f7c3",
+      "exception_id": "EX-39",
+      "policy_version": "POL-2026-01"
+    }
+  ],
+  "before": {
+    "resource_id": "public:CASE-02",
+    "segment": "public",
+    "kind": "network",
+    "rule_id": "NET-01",
+    "requirement": "F-03",
+    "status": "FAIL",
+    "severity": 3,
+    "priority": 6,
+    "reason": "Административный порт доступен из любой сети",
+    "evidence": {
+      "ingress": [
+        {
+          "cidr": "0.0.0.0/0",
+          "protocol": "tcp",
+          "port_from": 22,
+          "port_to": 22
+        }
+      ],
+      "collected_at": "2026-10-14T11:00:00+00:00"
+    },
+    "evidence_sha256": "b77f2828591f1393f4a2c0e72c5f11b6a7a4710f8644d1a5e8bfbe449305f7c3",
+    "exception_id": null,
+    "policy_version": "POL-2026-01"
+  },
+  "after": {
+    "resource_id": "public:CASE-02",
+    "segment": "public",
+    "kind": "network",
+    "rule_id": "NET-01",
+    "requirement": "F-03",
+    "status": "PASS",
+    "severity": 3,
+    "priority": 0,
+    "reason": "Нет разрешения административного доступа из любой сети",
+    "evidence": {
+      "ingress": [
+        {
+          "cidr": "10.10.0.0/24",
+          "protocol": "tcp",
+          "port_from": 22,
+          "port_to": 22
+        }
+      ],
+      "collected_at": "2026-10-14T11:00:00+00:00"
+    },
+    "evidence_sha256": "2800422f03f161eda183d3c486becb372ca9de64f0b243f13739797d8c7cef09",
+    "exception_id": null,
+    "policy_version": "POL-2026-01"
+  }
+}

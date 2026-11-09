@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "source": "private",
+  "resources": [
+    {
+      "uuid": "CASE-01",
+      "resource_type": "network",
+      "criticality": 2,
+      "configuration": {
+        "ingress": [
+          {
+            "cidr": "10.10.0.0/24",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-03",
+      "resource_type": "network",
+      "criticality": 2,
+      "configuration": {
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-05",
+      "resource_type": "identity",
+      "criticality": 2,
+      "configuration": {
+        "roles": [
+          "admin"
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-07",
+      "resource_type": "credential",
+      "criticality": 2,
+      "configuration": {
+        "key_created_at": "2026-10-01T12:00:00+00:00",
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-09",
+      "resource_type": "credential",
+      "criticality": 2,
+      "configuration": {
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-11",
+      "resource_type": "workload",
+      "criticality": 2,
+      "configuration": {
+        "privileged": true,
+        "run_as_non_root": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-13",
+      "resource_type": "workload",
+      "criticality": 2,
+      "configuration": {
+        "privileged": false,
+        "run_as_non_root": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-15",
+      "resource_type": "workload",
+      "criticality": 2,
+      "configuration": {
+        "privileged": false,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-17",
+      "resource_type": "namespace",
+      "criticality": 2,
+      "configuration": {
+        "default_deny": false,
+        "cni_supports_policy": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-19",
+      "resource_type": "storage",
+      "criticality": 2,
+      "configuration": {
+        "classification": "confidential",
+        "public_access": false,
+        "encrypted": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-21",
+      "resource_type": "storage",
+      "criticality": 2,
+      "configuration": {
+        "classification": "confidential",
+        "encrypted": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-23",
+      "resource_type": "storage",
+      "criticality": 2,
+      "configuration": {
+        "classification": "confidential",
+        "public_access": false,
+        "encrypted": false,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-25",
+      "resource_type": "logging",
+      "criticality": 2,
+      "configuration": {
+        "enabled": true,
+        "retention_days": 180,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-27",
+      "resource_type": "logging",
+      "criticality": 2,
+      "configuration": {
+        "retention_days": 180,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-29",
+      "resource_type": "logging",
+      "criticality": 2,
+      "configuration": {
+        "enabled": true,
+        "retention_days": 30,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-31",
+      "resource_type": "endpoint",
+      "criticality": 2,
+      "configuration": {
+        "tls_min_version": "1.2",
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-33",
+      "resource_type": "endpoint",
+      "criticality": 2,
+      "configuration": {
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-35",
+      "resource_type": "network",
+      "criticality": 2,
+      "configuration": {
+        "ingress": [
+          {
+            "cidr": "10.10.0.0/24",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-10T12:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-37",
+      "resource_type": "network",
+      "criticality": 2,
+      "configuration": {
+        "ingress": "not-an-array",
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-39",
+      "resource_type": "network",
+      "criticality": 2,
+      "configuration": {
+        "ingress": [
+          {
+            "cidr": "0.0.0.0/0",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "uuid": "CASE-40",
+      "resource_type": "network",
+      "criticality": 2,
+      "configuration": {
+        "ingress": [
+          {
+            "cidr": "0.0.0.0/0",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    }
+  ]
+}

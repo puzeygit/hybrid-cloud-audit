@@ -1,0 +1,20 @@
+[
+  {
+    "id": "EX-39",
+    "resource_id": "private:CASE-39",
+    "rule_id": "NET-01",
+    "approved_by": "model-risk-owner",
+    "status": "approved",
+    "valid_from": "2026-09-01T00:00:00+00:00",
+    "valid_until": "2026-11-01T00:00:00+00:00"
+  },
+  {
+    "id": "EX-40",
+    "resource_id": "private:CASE-40",
+    "rule_id": "NET-01",
+    "approved_by": "model-risk-owner",
+    "status": "approved",
+    "valid_from": "2026-09-01T00:00:00+00:00",
+    "valid_until": "2026-10-01T00:00:00+00:00"
+  }
+]

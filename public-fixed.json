@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "source": "public",
+  "resources": [
+    {
+      "resourceId": "CASE-02",
+      "type": "network",
+      "criticality": 2,
+      "properties": {
+        "ingress": [
+          {
+            "cidr": "10.10.0.0/24",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-04",
+      "type": "identity",
+      "criticality": 2,
+      "properties": {
+        "roles": [
+          "reader"
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-06",
+      "type": "identity",
+      "criticality": 2,
+      "properties": {
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-08",
+      "type": "credential",
+      "criticality": 2,
+      "properties": {
+        "key_created_at": "2026-01-01T00:00:00+00:00",
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-10",
+      "type": "workload",
+      "criticality": 2,
+      "properties": {
+        "privileged": false,
+        "run_as_non_root": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-12",
+      "type": "workload",
+      "criticality": 2,
+      "properties": {
+        "run_as_non_root": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-14",
+      "type": "workload",
+      "criticality": 2,
+      "properties": {
+        "privileged": false,
+        "run_as_non_root": false,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-16",
+      "type": "namespace",
+      "criticality": 2,
+      "properties": {
+        "default_deny": true,
+        "cni_supports_policy": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-18",
+      "type": "namespace",
+      "criticality": 2,
+      "properties": {
+        "default_deny": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-20",
+      "type": "storage",
+      "criticality": 2,
+      "properties": {
+        "classification": "confidential",
+        "public_access": true,
+        "encrypted": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-22",
+      "type": "storage",
+      "criticality": 2,
+      "properties": {
+        "classification": "confidential",
+        "public_access": false,
+        "encrypted": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-24",
+      "type": "storage",
+      "criticality": 2,
+      "properties": {
+        "classification": "confidential",
+        "public_access": false,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-26",
+      "type": "logging",
+      "criticality": 2,
+      "properties": {
+        "enabled": false,
+        "retention_days": 180,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-28",
+      "type": "logging",
+      "criticality": 2,
+      "properties": {
+        "enabled": true,
+        "retention_days": 180,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-30",
+      "type": "logging",
+      "criticality": 2,
+      "properties": {
+        "enabled": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-32",
+      "type": "endpoint",
+      "criticality": 2,
+      "properties": {
+        "tls_min_version": "1.0",
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-34",
+      "type": "network",
+      "criticality": 2,
+      "properties": {
+        "ingress": [
+          {
+            "cidr": "10.10.0.0/24",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ],
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    },
+    {
+      "resourceId": "CASE-36",
+      "type": "network",
+      "criticality": 2,
+      "properties": {
+        "ingress": [
+          {
+            "cidr": "10.10.0.0/24",
+            "protocol": "tcp",
+            "port_from": 22,
+            "port_to": 22
+          }
+        ]
+      }
+    },
+    {
+      "resourceId": "CASE-38",
+      "type": "storage",
+      "criticality": 2,
+      "properties": {
+        "classification": "public",
+        "public_access": true,
+        "encrypted": true,
+        "collected_at": "2026-10-14T11:00:00+00:00"
+      }
+    }
+  ]
+}
